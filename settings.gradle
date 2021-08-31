@@ -1,0 +1,15 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "MultiModuleExample"
+include ':app'
+include ':common'
+include ':feature-profile:profile-impl'
+include ':feature-profile:profile-api'
+include ':feature-auth:auth-impl'
+include ':feature-auth:auth-api'
